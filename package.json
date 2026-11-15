@@ -1,0 +1,31 @@
+{
+  "name": "abdullahsoftwarewala",
+  "productName": "Abdullah SoftwareWala",
+  "version": "1.0.0",
+  "description": "Portfolio of Abdullah SoftwareWala",
+  "main": "main.js",
+  "author": "Abdullah SoftwareWala",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "build-win": "electron-builder --win --x64"
+  },
+  "devDependencies": {
+    "electron": "^33.0.0",
+    "electron-builder": "^25.0.0"
+  },
+  "build": {
+    "appId": "com.abdullahsoftwarewala.portfolio",
+    "productName": "Abdullah SoftwareWala",
+    "asar": true,
+    "directories": { "output": "dist" },
+    "files": ["main.js", "index.html", "css/**", "js/**", "assets/**"],
+    "win": { "target": [{ "target": "nsis", "arch": ["x64"] }], "icon": "assets/icon.ico" },
+    "nsis": {
+      "oneClick": true,
+      "perMachine": false,
+      "createDesktopShortcut": true,
+      "shortcutName": "Abdullah SoftwareWala"
+    }
+  }
+}

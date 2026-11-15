@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Abdullah SoftwareWala | Software Developer &amp; AI Enthusiast</title>
+
+<meta name="description" content="Welcome to the official portfolio of Abdullah SoftwareWala. Explore software development, artificial intelligence, web applications, technology projects and digital solutions.">
+<meta name="author" content="Abdullah SoftwareWala">
+<meta name="keywords" content="AbdullahSoftwareWala, Abdullah Software Wala, Abdullah Software Developer, Abdullah Developer, Abdullah Portfolio, Software Developer Pakistan, AI Enthusiast Pakistan, Full-Stack Developer, AI Developer">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta name="theme-color" content="#ffffff">
+<link rel="canonical" href="https://abdullahsoftwarewala.gt.tc/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Abdullah SoftwareWala">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Abdullah SoftwareWala | Software Developer &amp; AI Enthusiast">
+<meta property="og:description" content="Welcome to the official portfolio of Abdullah SoftwareWala. Explore software development, artificial intelligence, web applications, technology projects and digital solutions.">
+<meta property="og:url" content="https://abdullahsoftwarewala.gt.tc/">
+<meta property="og:image" content="https://abdullahsoftwarewala.gt.tc/assets/abdullah.png">
+<meta property="og:image:alt" content="Abdullah SoftwareWala — Software Developer and AI Enthusiast">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Abdullah SoftwareWala | Software Developer &amp; AI Enthusiast">
+<meta name="twitter:description" content="Official portfolio of Abdullah SoftwareWala — software development, AI, web applications and digital solutions.">
+<meta name="twitter:image" content="https://abdullahsoftwarewala.gt.tc/assets/abdullah.png">
+<meta name="twitter:image:alt" content="Abdullah SoftwareWala — Software Developer and AI Enthusiast">
+
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/abdullah.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap">
+<link rel="stylesheet" href="css/style.css?v=4">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://abdullahsoftwarewala.gt.tc/#person",
+      "name": "Abdullah SoftwareWala",
+      "alternateName": ["AbdullahSoftwareWala", "Abdullah Software Wala", "Abdullah Software Developer"],
+      "url": "https://abdullahsoftwarewala.gt.tc/",
+      "image": "https://abdullahsoftwarewala.gt.tc/assets/abdullah.png",
+      "email": "mailto:mk.abdullah8976@gmail.com",
+      "jobTitle": "Software Developer",
+      "description": "Abdullah SoftwareWala is a software developer and AI enthusiast building web applications, real-time communication platforms, AI assistants and automation systems.",
+      "knowsAbout": ["Full-Stack Development","AI Application Development","LLM Integration","AI Agents","WebRTC","WebSockets","Flutter","Node.js","PHP","React","Next.js","MySQL"]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://abdullahsoftwarewala.gt.tc/#website",
+      "url": "https://abdullahsoftwarewala.gt.tc/",
+      "name": "Abdullah SoftwareWala",
+      "inLanguage": "en",
+      "description": "Official portfolio of Abdullah SoftwareWala — software development, artificial intelligence, web applications, technology projects and digital solutions.",
+      "publisher": { "@id": "https://abdullahsoftwarewala.gt.tc/#person" }
+    },
+    {
+      "@type": "ProfilePage",
+      "@id": "https://abdullahsoftwarewala.gt.tc/#webpage",
+      "url": "https://abdullahsoftwarewala.gt.tc/",
+      "name": "Abdullah SoftwareWala | Software Developer & AI Enthusiast",
+      "inLanguage": "en",
+      "isPartOf": { "@id": "https://abdullahsoftwarewala.gt.tc/#website" },
+      "mainEntity": { "@id": "https://abdullahsoftwarewala.gt.tc/#person" },
+      "about": { "@id": "https://abdullahsoftwarewala.gt.tc/#person" }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<div class="loader" id="loader">
+  <div class="loader__mark">
+    <span class="loader__letter">A</span>
+    <span class="loader__bar"><i></i></span>
+  </div>
+</div>
+
+<div class="scroll-progress"><i id="scrollBar"></i></div>
+
+<canvas id="scene3d" aria-hidden="true"></canvas>
+<div class="grain" aria-hidden="true"></div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#top" class="brand" aria-label="Abdullah SoftwareWala - home">
+      <span class="brand__dot"></span>
+      <span class="brand__name">Abdullah<span>SoftwareWala</span></span>
+    </a>
+
+    <nav class="nav__links" id="navLinks" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#work">Work</a>
+      <a href="#services">Services</a>
+      <a href="#journey">Journey</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="nav__actions">
+      <button class="icon-btn" id="themeToggle" aria-label="Switch theme" title="Switch theme">
+        <svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+      <a href="#contact" class="btn btn--sm btn--solid nav__cta">Let’s talk</a>
+      <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="hero">
+  <div class="hero__glow" aria-hidden="true"></div>
+  <div class="container hero__grid">
+
+    <div class="hero__copy">
+      <div class="pill reveal" data-d="0">
+        <span class="pulse"></span> Available for freelance &amp; collaboration
+      </div>
+
+      <h1 class="hero__title reveal" data-d="1">
+        <span class="line">Abdullah <em>SoftwareWala</em></span>
+        <span class="line">builds software that</span>
+        <span class="line">talks, thinks &amp; acts.</span>
+      </h1>
+
+      <p class="hero__sub reveal" data-d="2">
+        I’m <strong>Abdullah SoftwareWala</strong> — a software developer and AI enthusiast based in Pakistan,
+        working as a full-stack developer and software builder. I design and ship real-time communication
+        platforms, AI assistants, autonomous agents and automation systems from database to interface.
+      </p>
+
+      <div class="hero__roles reveal" data-d="3">
+        <span>Full-Stack Developer</span><i></i><span>AI Developer</span><i></i><span>Software Builder</span>
+      </div>
+
+      <div class="hero__cta reveal" data-d="4">
+        <a href="#work" class="btn btn--solid">
+          View my work
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a href="#contact" class="btn btn--ghost">Get in touch</a>
+      </div>
+
+      <div class="hero__stack reveal" data-d="5">
+        <span class="hero__stack-label">Working with</span>
+        <div class="hero__stack-list">
+          <span>PHP</span><span>Node.js</span><span>Flutter</span><span>React</span><span>Next.js</span><span>WebRTC</span><span>MySQL</span><span>LLM APIs</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__visual reveal" data-d="3">
+      <div class="portrait" id="portrait">
+        <div class="portrait__ring" aria-hidden="true"></div>
+        <div class="portrait__card">
+          <picture>
+            <source srcset="assets/abdullah.webp" type="image/webp">
+            <img src="assets/abdullah.png" alt="Portrait of Abdullah SoftwareWala, software developer" width="500" height="500" fetchpriority="high">
+          </picture>
+          <div class="portrait__shine" aria-hidden="true"></div>
+        </div>
+
+        <div class="chip chip--a" data-depth="26">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a3 3 0 0 1 3 3v1a3 3 0 0 1 3 3v1a3 3 0 0 1 0 6 3 3 0 0 1-3 3 3 3 0 0 1-6 0 3 3 0 0 1-3-3 3 3 0 0 1 0-6v-1a3 3 0 0 1 3-3V6a3 3 0 0 1 3-3z"/></svg>
+          <div><strong>AI Agents</strong><small>LLM orchestration</small></div>
+        </div>
+
+        <div class="chip chip--b" data-depth="-20">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h10M4 17h7"/><circle cx="19" cy="17" r="2.5"/></svg>
+          <div><strong>Real-Time</strong><small>WebSockets · WebRTC</small></div>
+        </div>
+
+        <div class="chip chip--c" data-depth="18">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8M12 18v3"/></svg>
+          <div><strong>Full-Stack</strong><small>DB → UI</small></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <a class="scroll-hint" href="#about" aria-label="Scroll down">
+    <span class="scroll-hint__mouse"><i></i></span>
+    <span>Scroll</span>
+  </a>
+</section>
+
+<!-- ============ MARQUEE ============ -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track">
+    <span>AI Application Development</span><b></b><span>Real-Time Messaging</span><b></b><span>WebRTC Calling</span><b></b>
+    <span>LLM Integration</span><b></b><span>AI Voice Assistants</span><b></b><span>Backend Engineering</span><b></b>
+    <span>Flutter Apps</span><b></b><span>Automation Systems</span><b></b>
+    <span>AI Application Development</span><b></b><span>Real-Time Messaging</span><b></b><span>WebRTC Calling</span><b></b>
+    <span>LLM Integration</span><b></b><span>AI Voice Assistants</span><b></b><span>Backend Engineering</span><b></b>
+    <span>Flutter Apps</span><b></b><span>Automation Systems</span><b></b>
+  </div>
+</div>
+
+<!-- ============ ABOUT ============ -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="sec-kicker"><i></i> About</span>
+      <h2 class="sec-title">A builder who ships complete products, not just features.</h2>
+    </div>
+
+    <div class="about__grid">
+      <div class="about__text reveal" data-d="1">
+        <p class="lead">
+          I’m <strong>Abdullah SoftwareWala</strong>, a software developer based in Pakistan building software
+          end to end — the database, the API, the real-time layer, the AI logic and the interface
+          people actually touch. Most of my work sits where <strong>communication platforms</strong> meet
+          <strong>applied artificial intelligence</strong>.
+        </p>
+        <p>
+          My main focus is Phoneopia, a communication platform combining messaging, calling and AI, built on a
+          PHP and Node.js backend with WebSockets and WebRTC, a MySQL data layer and a Flutter mobile client.
+          Alongside it I develop AI assistants and agent systems — GINBABA and Rehan Bot among them —
+          exploring how LLMs can hold context, use tools and carry out real tasks.
+        </p>
+        <p>
+          I’m equally comfortable debugging a WebSocket handshake, designing a MySQL schema, wiring an LLM tool-calling
+          loop or polishing an interface until it feels right. I prefer shipping small, working systems and iterating
+          over planning something perfect that never launches.
+        </p>
+
+        <div class="about__principles">
+          <div class="principle">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 6v6c0 5 3.4 9.2 8 10 4.6-.8 8-5 8-10V6l-8-4z"/><path d="m9 12 2 2 4-4"/></svg>
+            <div><h3>Honest engineering</h3><p>Real status on every project — built, in progress or concept.</p></div>
+          </div>
+          <div class="principle">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h8l-1 8 10-12h-8l1-8z"/></svg>
+            <div><h3>Speed with care</h3><p>Fast iteration, clean structure, maintainable code.</p></div>
+          </div>
+          <div class="principle">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            <div><h3>Always learning</h3><p>New models, new protocols, new tools — tested in real builds.</p></div>
+          </div>
+        </div>
+      </div>
+
+      <aside class="about__side reveal" data-d="2">
+        <div class="card-3d glass panel">
+          <h3 class="panel__title">Focus areas</h3>
+          <ul class="panel__list">
+            <li><i></i> Real-time messaging &amp; calling infrastructure</li>
+            <li><i></i> AI assistants with voice &amp; chat</li>
+            <li><i></i> Autonomous agents &amp; tool use</li>
+            <li><i></i> Automation &amp; workflow systems</li>
+            <li><i></i> Full-stack web &amp; mobile products</li>
+          </ul>
+          <div class="panel__divider"></div>
+          <h3 class="panel__title">Currently</h3>
+          <p class="panel__note">
+            Developing <strong>Phoneopia</strong> and <strong>GINBABA</strong>, while experimenting with
+            agent frameworks and AI media generation.
+          </p>
+          <a href="#work" class="panel__link">
+            See the projects
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section class="section section--alt" id="skills">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="sec-kicker"><i></i> Technical Skills</span>
+      <h2 class="sec-title">The stack I build with.</h2>
+      <p class="sec-sub">Technologies I use regularly across backend, AI and real-time systems.</p>
+    </div>
+
+    <div class="skills__grid">
+      <article class="skillset card-3d reveal" data-d="1">
+        <header>
+          <span class="skillset__ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m8 17-5-5 5-5M16 7l5 5-5 5M13 4l-2 16"/></svg>
+          </span>
+          <h3>Development</h3>
+        </header>
+        <div class="tags">
+          <span>PHP</span><span>JavaScript</span><span>HTML5</span><span>CSS3</span><span>React</span><span>Next.js</span>
+          <span>Flutter</span><span>Node.js</span><span>MySQL</span><span>REST APIs</span><span>Backend Development</span><span>Full-Stack Development</span>
+        </div>
+      </article>
+
+      <article class="skillset card-3d reveal" data-d="2">
+        <header>
+          <span class="skillset__ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="7" width="14" height="12" rx="3"/><path d="M12 7V4M9 12h.01M15 12h.01M9.5 16h5"/><path d="M2 12h3M19 12h3"/></svg>
+          </span>
+          <h3>Artificial Intelligence</h3>
+        </header>
+        <div class="tags">
+          <span>AI Application Development</span><span>LLM Integration</span><span>AI Agents</span><span>AI Chatbots</span>
+          <span>AI Voice Assistants</span><span>Prompt Engineering</span><span>AI Automation</span><span>OpenAI API</span>
+          <span>Gemini API</span><span>Groq</span><span>OpenRouter</span><span>Claude Code</span><span>CopilotKit</span>
+        </div>
+      </article>
+
+      <article class="skillset card-3d reveal" data-d="3">
+        <header>
+          <span class="skillset__ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 9-9M21 12a9 9 0 0 1-9 9"/><circle cx="12" cy="12" r="3"/><path d="M6.5 6.5 9.8 9.8M14.2 14.2l3.3 3.3"/></svg>
+          </span>
+          <h3>Real-Time Technologies</h3>
+        </header>
+        <div class="tags">
+          <span>WebSockets</span><span>WebRTC</span><span>Server-Sent Events</span><span>Real-Time Messaging</span>
+          <span>Real-Time Calling</span><span>Push Notifications</span><span>Baileys Integration</span>
+        </div>
+      </article>
+
+      <article class="skillset card-3d reveal" data-d="4">
+        <header>
+          <span class="skillset__ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0 5 5L21 21H3l9.7-9.7a4 4 0 0 1 2-5z"/></svg>
+          </span>
+          <h3>Tools</h3>
+        </header>
+        <div class="tags">
+          <span>VS Code</span><span>Claude Code</span><span>OpenCode</span><span>Git</span><span>npm</span>
+          <span>PowerShell</span><span>phpMyAdmin</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FEATURED WORK ============ -->
+<section class="section" id="work">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="sec-kicker"><i></i> Featured Projects</span>
+      <h2 class="sec-title">Products and platforms I’m building.</h2>
+      <p class="sec-sub">Each card shows its honest current state. Select a project for the full breakdown.</p>
+    </div>
+
+    <div class="work__grid" id="featuredGrid"><!-- injected --></div>
+  </div>
+</section>
+
+<!-- ============ EXPERIMENTS ============ -->
+<section class="section section--alt" id="experiments">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="sec-kicker"><i></i> Other Experiments &amp; Projects</span>
+      <h2 class="sec-title">Smaller builds, prototypes and concepts.</h2>
+      <p class="sec-sub">Work in earlier stages — explorations I use to test ideas and techniques.</p>
+    </div>
+
+    <div class="exp__grid" id="expGrid"><!-- injected --></div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section class="section" id="services">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="sec-kicker"><i></i> What I Build</span>
+      <h2 class="sec-title">Services I offer.</h2>
+    </div>
+
+    <div class="svc__grid">
+      <article class="svc card-3d reveal" data-d="1">
+        <span class="svc__num">01</span>
+        <svg class="svc__ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        <h3>Real-Time Communication Platforms</h3>
+        <p>Messaging, voice and video systems built on WebSockets and WebRTC, with presence, push notifications and a scalable backend.</p>
+      </article>
+
+      <article class="svc card-3d reveal" data-d="2">
+        <span class="svc__num">02</span>
+        <svg class="svc__ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="7" width="14" height="12" rx="3"/><path d="M12 7V4M9 12h.01M15 12h.01M9.5 16h5"/></svg>
+        <h3>AI Assistants &amp; Chatbots</h3>
+        <p>Context-aware assistants with chat and voice interfaces, connected to your data and tools through the OpenAI, Gemini, Groq and OpenRouter APIs.</p>
+      </article>
+
+      <article class="svc card-3d reveal" data-d="3">
+        <span class="svc__num">03</span>
+        <svg class="svc__ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9 7 7M17 17l2.1 2.1M19.1 4.9 17 7M7 17l-2.1 2.1"/></svg>
+        <h3>AI Agents &amp; Automation</h3>
+        <p>Agents that use tools, follow multi-step workflows and automate repetitive processes — reporting, coordination and data handling.</p>
+      </article>
+
+      <article class="svc card-3d reveal" data-d="4">
+        <span class="svc__num">04</span>
+        <svg class="svc__ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M3 9h18M9 21V9"/></svg>
+        <h3>Full-Stack Web Applications</h3>
+        <p>Complete products from MySQL schema and PHP or Node.js APIs through to React and Next.js interfaces — built to be maintained.</p>
+      </article>
+
+      <article class="svc card-3d reveal" data-d="5">
+        <span class="svc__num">05</span>
+        <svg class="svc__ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg>
+        <h3>Flutter Mobile Apps</h3>
+        <p>Cross-platform Android and iOS applications connected to real-time backends, with native-feeling interfaces.</p>
+      </article>
+
+      <article class="svc card-3d reveal" data-d="6">
+        <span class="svc__num">06</span>
+        <svg class="svc__ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 17V7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10"/><path d="M2 21h20M9 9l-2 2 2 2M15 9l2 2-2 2"/></svg>
+        <h3>API Development &amp; Integration</h3>
+        <p>Clean REST APIs, third-party integrations and backend services that connect systems reliably.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ JOURNEY ============ -->
+<section class="section section--alt" id="journey">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="sec-kicker"><i></i> My Development Journey</span>
+      <h2 class="sec-title">From first lines of code to AI products.</h2>
+    </div>
+
+    <ol class="timeline">
+      <li class="tl reveal" data-d="1">
+        <span class="tl__dot"></span>
+        <div class="tl__card card-3d">
+          <span class="tl__phase">Phase 01</span>
+          <h3>Learning the fundamentals</h3>
+          <p>Started with HTML5, CSS3 and JavaScript — building static pages, then interactive interfaces, and learning how the browser actually works.</p>
+          <div class="tl__tags"><span>HTML5</span><span>CSS3</span><span>JavaScript</span></div>
+        </div>
+      </li>
+      <li class="tl reveal" data-d="2">
+        <span class="tl__dot"></span>
+        <div class="tl__card card-3d">
+          <span class="tl__phase">Phase 02</span>
+          <h3>Backend and databases</h3>
+          <p>Moved into PHP and MySQL — authentication, CRUD systems, schema design and REST APIs. This is where I started building full applications instead of pages.</p>
+          <div class="tl__tags"><span>PHP</span><span>MySQL</span><span>REST APIs</span><span>phpMyAdmin</span></div>
+        </div>
+      </li>
+      <li class="tl reveal" data-d="3">
+        <span class="tl__dot"></span>
+        <div class="tl__card card-3d">
+          <span class="tl__phase">Phase 03</span>
+          <h3>Real-time systems</h3>
+          <p>Took on live communication — Node.js with WebSockets for instant messaging, WebRTC for calling, Server-Sent Events for streaming and push notifications for delivery.</p>
+          <div class="tl__tags"><span>Node.js</span><span>WebSockets</span><span>WebRTC</span><span>SSE</span></div>
+        </div>
+      </li>
+      <li class="tl reveal" data-d="4">
+        <span class="tl__dot"></span>
+        <div class="tl__card card-3d">
+          <span class="tl__phase">Phase 04</span>
+          <h3>Mobile and modern frontend</h3>
+          <p>Added Flutter for cross-platform mobile, and React with Next.js for modern web interfaces — one backend serving both web and app clients.</p>
+          <div class="tl__tags"><span>Flutter</span><span>React</span><span>Next.js</span></div>
+        </div>
+      </li>
+      <li class="tl reveal" data-d="5">
+        <span class="tl__dot"></span>
+        <div class="tl__card card-3d">
+          <span class="tl__phase">Phase 05</span>
+          <h3>Applied artificial intelligence</h3>
+          <p>Began integrating LLMs into real products — chat assistants, voice interfaces, prompt engineering and tool-calling with the OpenAI, Gemini, Groq and OpenRouter APIs.</p>
+          <div class="tl__tags"><span>LLM Integration</span><span>OpenAI API</span><span>Gemini API</span><span>Groq</span></div>
+        </div>
+      </li>
+      <li class="tl reveal" data-d="6">
+        <span class="tl__dot"></span>
+        <div class="tl__card card-3d">
+          <span class="tl__phase">Now</span>
+          <h3>AI agents &amp; product building</h3>
+          <p>Building AI agents that act, not just answer — automation systems, device control, AI media generation and developer tooling, while continuing to develop Phoneopia and GINBABA.</p>
+          <div class="tl__tags"><span>AI Agents</span><span>Automation</span><span>CopilotKit</span><span>Claude Code</span></div>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section section--contact" id="contact">
+  <div class="container">
+    <div class="contact__wrap">
+
+      <div class="contact__intro reveal">
+        <span class="sec-kicker"><i></i> Contact</span>
+        <h2 class="sec-title">Have something to build?</h2>
+        <p class="sec-sub">
+          Open to freelance projects, product collaboration and interesting technical problems —
+          especially anything involving real-time systems or applied AI.
+        </p>
+
+        <div class="contact__links">
+          <a class="cl" href="mailto:mk.abdullah8976@gmail.com">
+            <span class="cl__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
+            <span class="cl__txt"><small>Email</small><strong>mk.abdullah8976@gmail.com</strong></span>
+          </a>
+          <div class="cl">
+            <span class="cl__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18 15 15 0 0 1 0-18z"/></svg></span>
+            <span class="cl__txt"><small>Website</small><strong>abdullahsoftwarewala.gt.tc</strong></span>
+          </div>
+          <div class="cl">
+            <span class="cl__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+            <span class="cl__txt"><small>Response time</small><strong>Usually within 24 hours</strong></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact__formwrap reveal" data-d="2">
+        <form class="form glass card-3d" id="contactForm" action="contact.php" method="post" novalidate>
+          <div class="form__row">
+            <div class="field">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required autocomplete="name" placeholder="Your name">
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required autocomplete="email" placeholder="you@example.com">
+            </div>
+          </div>
+          <div class="field">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required placeholder="What’s this about?">
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Tell me about the project, timeline and what you need."></textarea>
+          </div>
+          <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <button type="submit" class="btn btn--solid btn--full" id="submitBtn">
+            <span class="btn__label">Send message</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+          </button>
+          <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__brand">
+      <span class="brand__dot"></span>
+      <div>
+        <strong>Abdullah SoftwareWala</strong>
+        <small>Full-Stack Developer · AI Developer · Software Builder</small>
+      </div>
+    </div>
+    <nav class="footer__nav" aria-label="Footer">
+      <a href="#about">About</a><a href="#skills">Skills</a><a href="#work">Work</a>
+      <a href="#services">Services</a><a href="#journey">Journey</a><a href="#contact">Contact</a>
+    </nav>
+    <p class="footer__copy">© <span id="year"></span> Abdullah SoftwareWala. Designed &amp; built from scratch.</p>
+  </div>
+</footer>
+
+<!-- ============ PROJECT MODAL ============ -->
+<div class="modal" id="modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal__backdrop" data-close></div>
+  <div class="modal__panel glass" role="document">
+    <button class="modal__close" data-close aria-label="Close">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg>
+    </button>
+    <div class="modal__body" id="modalBody"></div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+<script src="js/main.js?v=2" defer></script>
+</body>
+</html>
